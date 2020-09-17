@@ -29,10 +29,10 @@ class TestVectors(unittest.TestCase):
         self.assertEqual(getattr(_mul, 'z'), -4.0)
 
     def test_division(self):
-        _div = self.v1 / self.v2
-        self.assertEqual(getattr(_div, 'x'), 2.0)
-        self.assertEqual(getattr(_div, 'y'), -4.0)
-        self.assertEqual(getattr(_div, 'z'), -4.0)
+        _div = self.v2 / 2
+        self.assertEqual(getattr(_div, 'x'), 1.5)
+        self.assertEqual(getattr(_div, 'y'), 3.0)
+        self.assertEqual(getattr(_div, 'z'), 4.5)
 
 
 if __name__ == '__main__':
